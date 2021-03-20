@@ -1,0 +1,7 @@
+<div align="center" style="margin-top:180px;">
+    <table>
+        <tr><td align="center" colspan="2"><h2>Aadhar Card Masking</h2></td></tr>
+        <tr><td>Enter Aadhar Number : </td><td><input type="text" [(ngModel)]="aadharNo" maxlength="12"></td></tr>
+        <tr><td>Masked Aadhar Number : </td><td>{{aadharNo|aadhar}}</td></tr>
+    </table>
+</div>

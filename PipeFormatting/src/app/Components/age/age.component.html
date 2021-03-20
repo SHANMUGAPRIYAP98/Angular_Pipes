@@ -1,0 +1,9 @@
+<div align="center" style="margin-top:180px;">
+    <table>
+        <tr><td align="center" colspan="2"><h2>Age Calculation</h2></td></tr>
+        <tr><td>Enter the Date of Birth : </td><td><input type="text" [(ngModel)]="dob"></td><td>{{dob|date:'dd/MM/yyyy'}}</td></tr>
+        <tr><td>Age : </td><td><input type="text" value="{{dob|age}}"></td></tr>
+    </table>
+</div>
+
+

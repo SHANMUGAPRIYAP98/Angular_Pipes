@@ -1,0 +1,8 @@
+
+    <div align="center" style="margin-top:180px;">
+        <table>
+            <tr><td align="center" colspan="2"><h2>Social Security Number Masking</h2></td></tr>
+            <tr><td>Enter Social Security Number : </td><td><input type="text" [(ngModel)]="ssn" maxlength="9"></td></tr>
+            <tr><td>Masked Social Security Number : </td><td>{{ssn|sSNMask}}</td></tr>
+        </table>
+    </div>

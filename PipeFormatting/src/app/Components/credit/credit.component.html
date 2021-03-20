@@ -1,0 +1,7 @@
+<div align="center" style="margin-top:180px;">
+    <table>
+        <tr><td align="center" colspan="2"><h2>Credit Card Masking</h2></td></tr>
+        <tr><td>Enter Credit Card Number : </td><td><input type="text" [(ngModel)]="creditNo" maxlength="16"></td></tr>
+        <tr><td>Masked Credit Card Number : </td><td>{{creditNo|creditMask}}</td></tr>
+    </table>
+</div>

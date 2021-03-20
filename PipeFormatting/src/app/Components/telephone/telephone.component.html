@@ -1,0 +1,10 @@
+<div align="center" style="margin-top:180px;">
+    <table>
+        <tr><td align="center" colspan="2"><h2>Telephone Number format based on selected countries</h2></td></tr>
+        <tr><td>Select Country : </td><td><select [(ngModel)]="coun">
+            <option>Select Country</option>
+            <option *ngFor="let c of countries">{{c}}</option>
+        </select></td></tr>
+        <tr><td>Telephone Number format : </td><td>{{coun|country}}</td></tr>
+    </table>
+</div>

@@ -1,0 +1,11 @@
+<div align="center" style="margin-top:180px;">
+    <table>
+        <tr><td align="center" colspan="2"><h2>Forex Calculation</h2></td></tr>
+        <tr><td>Select Conversion : </td><td><select [(ngModel)]="selectedEx">
+            <option>Choose Option</option>
+            <option *ngFor="let e of exchange">{{e}}</option>
+        </select></td></tr>
+        <tr><td>Enter the Indian Rupees</td><td><input type="number" [(ngModel)]="rupee"></td></tr>
+        <tr><td>Forex Value : </td><td>{{selectedEx|currency}}</td></tr>
+    </table>
+</div>
